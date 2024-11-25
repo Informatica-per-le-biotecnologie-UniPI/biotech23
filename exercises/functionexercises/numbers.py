@@ -11,6 +11,10 @@ def min_(elements: list):
     # lista non vuota
     # lista con un elemento
     if len(elements) == 1:
+        # modifico valore: side-effect
+        # elements[0] = None
+        # riassegno: non ho side-effect!
+        elements = [1, 2, 5]
         # restituisco l'elemento
         return elements[0]  # si conta da 0!
 
